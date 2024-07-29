@@ -17,7 +17,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 public class AppConfig {
     @Bean
-    public LocalSessionFactoryBean sessionFactory() {
+    public LocalSessionFactoryBean sessionFactoryBean() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan("com.javarush.domain");
