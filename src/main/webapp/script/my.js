@@ -79,5 +79,4 @@ function add_task() {
     setTimeout(() => {
         document.location.reload();
     }, 300);
-
 }
